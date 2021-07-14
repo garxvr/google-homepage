@@ -19,77 +19,84 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+    </style>
 
 </head>
 
 <body>
-  <div class="nav-bar">
-      <div class="about-store-wrapper">
-        <a id="about-link">
-            About
-        </a>
-        <a id="store-link">
-            Store
-        </a>
-      </div>
-      <div class="google-services">
-        <div class="available-services-container">
-            <div id="gmail-link">
-                <a>Gmail</a>
-            </div>
-            <div id="images-link">
-                <a>Images</a>
-            </div>
-        </div>
-        <div class="apps-avatar-container">
-            <div class="apps-button-wrapper">
-                <a id="google-apps-link">
-                    <img id="google-apps-image" alt="Google Apps" src="./assets/google-apps-dots.png">
+    <div class="main-container">
+        <div class="nav-bar-left-part">
+            <div class="about-store-wrapper">
+                <a id="about-link">
+                    About
+                </a>
+                <a id="store-link">
+                    Store
                 </a>
             </div>
-            <div class="avatar-menu">
-                <img id="avatar" alt="User's Avatar" src="./assets/odin-logo.svg">
+            <div class="google-services">
+                <div class="nav-bar-right-part">
+                    <div class="available-services-container">
+                        <div id="gmail-link">
+                            <a>Gmail</a>
+                        </div>
+                        <div id="images-link">
+                            <a>Images</a>
+                        </div>
+                    </div>
+                    <div class="apps-avatar-container">
+                        <div class="apps-button-wrapper">
+                            <a id="google-apps-link">
+                                <img id="google-apps-image" alt="Google Apps" src="./assets/google-apps-dots.png">
+                            </a>
+                        </div>
+                        <div class="avatar-menu">
+                            <img id="avatar" alt="User's Avatar" src="./assets/odin-logo.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="logo-container">
+            <img id="logo" alt="Google" src="./assets/googlelogo_color_272x92dp.png">
+        </div>
+        <div class="search-main">
+            <div class="search-field">
+                <div class="search-icon-wrap">
+                    <img id="search-icon" alt="Search Lens Icon" src="assets/pngwing.com.png">
+                </div>
+                <div class="search-mic-icon-wrap">
+                    <img id="mic-icon" alt="Voice-search" src="./assets/google-search-voice-icon.png">
+                </div>
+            </div>
+            <div class="search-buttons">
+                <div id="inputs">
+                    <input type="submit" value="Google Search" id="google-search">
+                    <input type="submit" value="I'm Feeling Lucky" id="lucky-button">
+                </div>
             </div>
         </div>
-      </div>
-  </div>  
-  <div class="logo-container">
-    <img id="logo" alt="Google" src="./assets/googlelogo_color_272x92dp.png">
-  </div>
-  <div class="search-main">
-    <div class="search-field">
-        <div class="search-icon-wrap">
-            <img id="search-icon" alt="Search Lens Icon" src="assets/pngwing.com.png">
+        <div class="footer">
+            <div class="footer-left-wrapper">
+                <a id="advertising">Advertising</a>
+                <a id="business">Business</a>
+                <a id="how-search">How Search works</a>
+            </div>
+            <div class="footer-middle-wrapper">
+                <a id="carbon-neutral">
+                    <img alt="green-leaf" src="assets/green-leaf-carbon-neutral.png">
+                    <span>Carbon neutral since 2007</span>
+                </a>
+            </div>
+            <div class="footer-right-wrapper">
+                <a id="privacy">Privacy</a>
+                <a id="terms">Terms</a>
+                <a id="settings">Settings</a>
+            </div>
         </div>
-        <div class="search-mic-icon-wrap">
-            <img id="mic-icon" alt="Voice-search" src="./assets/google-search-voice-icon.png">
-        </div>
+        <script src="js/scripts.js"></script>
     </div>
-    <div class="search-buttons">
-        <div id="inputs">
-            <input type="submit" value="Google Search" id="google-search">
-            <input type="submit" value="I'm Feeling Lucky" id="lucky-button">
-        </div>
-    </div>
-  </div>
-  <div class="footer">
-      <div class="left-wrapper">
-          <a id="advertising">Advertising</a>
-          <a id="business">Business</a>
-          <a id="how-search">How Search works</a>
-      </div>
-      <div class="middle-wrapper">
-          <a id="carbon-neutral">
-              <img alt="green-leaf" src="assets/green-leaf-carbon-neutral.png">
-              <span>Carbon neutral since 2007</span>
-          </a>
-      </div>
-      <div class="right-wrapper">
-          <a id="privacy">Privacy</a>
-          <a id="terms">Terms</a>
-          <a id="settings">Settings</a>
-      </div>
-  </div>
-  <script src="js/scripts.js"></script>
 </body>
 </html>
