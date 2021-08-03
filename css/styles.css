@@ -1,18 +1,35 @@
 body, input, button {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 400;
+    font-stretch: normal;
     color: #222;
 }
 div {
     display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    vertical-align: middle;
+}
+li {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    line-height: 24px;
+}
+a {
+    display: block;
+    padding: 5px;
 }
 .main-container {
     display: flex;
     flex-direction: column;
     height: 100%;
     text-decoration-style: solid;
-    text-decoration-thickness: auto;
 }
 .nav-bar-left-part {
     display: flex;
@@ -22,8 +39,19 @@ div {
     height: 60px;
     padding: 6px;
 }
-.about-store-wrapper {
-
+#google-apps-image {
+    max-height: 24px;
+    max-width: 24px;
+}
+#avatar {
+    max-height: 32px;
+    max-width: 32px;
+    border-radius: 50%;
+    background-size: 32px 32px;
+    border: 0;
+}
+.float-right {
+    float: right;
 }
 .google-services {
     display: inline-block;
@@ -32,6 +60,9 @@ div {
     height: 48px;
     color: black;
     position: relative;
+}
+#about-link {
+    
 }
 .availale-services-container {
 
@@ -74,16 +105,6 @@ div {
 }
 .footer-right-wrapper {
 
-}
-#about-link {
-    display: inline-block;
-    margin: 0 5px 0 15px;
-    padding: 5px;
-    text-decoration: none;
-}
-#store-link {
-    margin: 0 5px;
-    padding: 5px;
 }
 
 
