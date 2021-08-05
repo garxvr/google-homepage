@@ -29,42 +29,50 @@
     <div class="main-container">
         <ul class="nav-bar">
             <li>
-                <a id="about-link">
+                <a href="./about.html" id="about-link">
                     About
                 </a>
             </li>
             <li>
-                <a id="store-link">
+                <a href="./store.html" id="store-link">
                     Store
                 </a>
             </li>
-            <li id="avatar-wrapper" class="float-right">
-                <img id="avatar" alt="User's Avatar" src="./assets/odin-logo.svg">
+            <li id="avatar-wrap" class="float-right">
+                <a id="user-avatar" href="./user.html">
+                    <img id="avatar" alt="User's Avatar" src="./assets/odin-logo.svg">
+                </a>
             </li>
             <li class="float-right">
-                <a id="google-apps-link">
+                <a href="./apps.html" id="google-apps-link">
                     <img id="google-apps-image" alt="Google Apps" src="./assets/google-apps-dots.png">
                 </a>
             </li>
             <li class="float-right">
-                <a>Images</a>
+                <a href="./images.html">Images</a>
             </li>
             <li class="float-right">
-                <a>Gmail</a>
+                <a href="./gmail.html">Gmail</a>
             </li>
         </ul>
         <div class="logo-container">
             <img id="logo" alt="Google" src="./assets/googlelogo_color_272x92dp.png">
         </div>
         <div class="search-main">
-            <div class="search-field">
-                <div class="search-icon-wrap">
-                    <img id="search-icon" alt="Search Lens Icon" src="assets/pngwing.com.png">
+            <form class="search-field">
+                <div class="search-field-wrap">
+                    <div class="search-icon-wrap">
+                        <img id="search-icon" alt="Search Lens Icon" src="assets/pngwing.com.png">
+                    </div>
+                    <div class="search-text-field">
+                        <input id="search-text-main" title="Search"
+                        spellcheck="false" type="text" maxlength="2048" autocapitalize="off" aria-autocomplete="both" autocomplete="off">
+                    </div>
+                    <div class="search-mic-icon-wrap">
+                        <img id="mic-icon" alt="Voice-search" src="./assets/google-search-voice-icon.png">
+                    </div>
                 </div>
-                <div class="search-mic-icon-wrap">
-                    <img id="mic-icon" alt="Voice-search" src="./assets/google-search-voice-icon.png">
-                </div>
-            </div>
+            </form>
             <div class="search-buttons">
                 <div id="inputs">
                     <input type="submit" value="Google Search" id="google-search">
