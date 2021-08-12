@@ -1,3 +1,8 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body, input, button {
     font-family: 'Roboto', sans-serif;
     font-size: 0.8rem;
@@ -23,10 +28,11 @@ li {
     margin-top: 5px;
     line-height: 24px;
 }
-li a {
+a {
     display: block;
     padding: 5px;
     color: #222;
+    font-size: 14px;
     text-decoration: none;
 }
 a:hover {
@@ -37,6 +43,7 @@ a:hover {
     flex-direction: column;
     height: 100%;
     text-decoration-style: solid;
+    flex: 1 0 auto;
 }
 .nav-bar-left-part {
     display: flex;
@@ -98,32 +105,39 @@ a:hover {
 }
 .search-field {
     display: block;
-    margin-top: 0em;
-    height: 140px;
+    margin-top: 0.4em;
+    height: 80px;
     width: 100%;
+
 }
 #search-icon {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 #mic-icon {
     width: 24px;
     height: 24px;
+
 }
 .search-field-wrap {
     display: flex;
+    justify-content: space-between;
     border: 1px solid #dfe1e5;
     box-shadow: none;
     border-radius: 24px;
     z-index: 3;
-    height: 44px;
-    margin: 5px auto;
+    height: 38px;
+    margin: 0 auto;
     max-width: 584px;
     position: relative;
     padding-top: 6px;
 }
 .search-icon-wrap {
+    margin: 8px 12px;
+}
+.search-mic-icon-wrap {
     display: flex;
+    margin: 4px 12px 0 0;
 }
 .search-text-field {
     flex: 100%;
@@ -153,20 +167,63 @@ a:hover {
 
 }
 .search-buttons {
-
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    justify-items: center;
 }
 .footer {
-
+    display: flex;
+    width: 100% auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    
 }
 .footer-left-wrapper {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: 30%;
+    order: 1;
 }
 .footer-middle-wrapper {
-
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+    flex-wrap: wrap;
 }
 .footer-right-wrapper {
-
+    display: flex;
+    justify-content: flex-end;
+    order: 3;
+    min-width: 30%;
 }
+.footer a {
+    padding: 15px;
+    align-self: center;
+    color: #70757a;
+    flex-shrink: 0;
+}
+#green-leaf {
+    height: 14px;
+    width: 12.5px;
+    margin-right: 6px;
+    white-space: nowrap;
+    align-self: center;
+}
+#carbon-neutral {
+    display: block;
+    padding: 15px;
+    white-space: nowrap;
+}
+#carbon-neutral-text {
+    white-space: nowrap;
+    vertical-align: top;
+    align-self: center;
+}
+
 
 
 
