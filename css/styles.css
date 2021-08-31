@@ -41,9 +41,12 @@ a:hover {
 .main-container {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100% auto;
     text-decoration-style: solid;
     flex: 1 0 auto;
+}
+.nav-bar {
+    padding: 6px;
 }
 .nav-bar-left-part {
     display: flex;
@@ -108,7 +111,7 @@ a:hover {
     margin-top: 0.4em;
     height: 80px;
     width: 100%;
-
+    padding-top: 5px 8px 0 16px;
 }
 #search-icon {
     width: 15px;
@@ -116,8 +119,7 @@ a:hover {
 }
 #mic-icon {
     width: 24px;
-    height: 24px;
-
+    height: 26px;
 }
 .search-field-wrap {
     display: flex;
@@ -130,10 +132,10 @@ a:hover {
     margin: 0 auto;
     max-width: 584px;
     position: relative;
-    padding-top: 6px;
+    padding: 4px 0; 
 }
 .search-icon-wrap {
-    margin: 8px 12px;
+    margin: 10px 12px;
 }
 .search-mic-icon-wrap {
     display: flex;
@@ -161,10 +163,6 @@ a:hover {
     flex: 100%;
     height: 34px;
     font-size: 16px;
-
-}
-.search-mic-icon-wrap {
-
 }
 .search-buttons {
     display: flex;
@@ -174,17 +172,19 @@ a:hover {
 }
 .footer {
     display: flex;
-    width: 100% auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 0 20px;
     background-color: #f2f2f2;
-    
 }
 .footer-left-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-left: 20px;
     min-width: 30%;
     order: 1;
 }
@@ -197,6 +197,7 @@ a:hover {
 .footer-right-wrapper {
     display: flex;
     justify-content: flex-end;
+    padding-right: 20px;
     order: 3;
     min-width: 30%;
 }
@@ -223,8 +224,46 @@ a:hover {
     vertical-align: top;
     align-self: center;
 }
-
-
+#inputs {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#google-search {
+    display: block;
+    background-color: #f8f9fa;
+    margin: 0 4px;
+    padding: 0 16px;
+    cursor: pointer;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
+    line-height: 27px;
+}
+#lucky-button {
+    display: block;
+    background-color: #f8f9fa;
+    margin: 0 5px;
+    padding: 0 16px;
+    cursor: pointer;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
+    line-height: 27px;
+}
+.input-animation {
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+}
+.input-animation:hover {
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #DADCE0;
+    color: #202124;
+}
 
 
 
